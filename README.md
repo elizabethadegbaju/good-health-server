@@ -1,5 +1,6 @@
 A one-liner phrase describing this project or app
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/78def4384aa8454d8587e74c0c11e1b4)](https://app.codacy.com/gh/BuildForSDG/good-health-server?utm_source=github.com&utm_medium=referral&utm_content=BuildForSDG/good-health-server&utm_campaign=Badge_Grade_Settings)
 [![Codacy Badge](https://img.shields.io/badge/Code%20Quality-D-red)](https://img.shields.io/badge/Code%20Quality-D-red)
 
 

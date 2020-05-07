@@ -1,5 +1,5 @@
 [flake8]
-
+ignore = E111
 exclude =
   .pytest_cache
   .DS_Store
@@ -17,5 +17,6 @@ exclude =
   .github
   tests/fixtures/
   tests/utils/fixtures/
+  src/goodHealth/settings.py
 
 max-complexity = 10

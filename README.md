@@ -29,19 +29,8 @@ How would someone use what you have built, include URLs to the deployed app, ser
 ## Setup
 You should have **Python 3.5+** and **git** installed. 
 
-1. Clone the repo you've created from the template herein and change into the directory
 
-    ``
-    git clone <Your Repository>
-    ``
-
-2. Change into repo directory
-
-    ``
-    cd python-starter
-    ``
-
-3. Install poetry, a dependecy manager for python.
+1. Install poetry, a dependecy manager for python.
 
     On windows, you will need powershell to install it:
 
@@ -71,6 +60,19 @@ You should have **Python 3.5+** and **git** installed.
     ``
     poetry self update
     ``
+    **Remember to restart your terminal or command line
+
+2. Clone the repo you've created from the template herein and change into the directory
+
+    ``
+    git clone <Your Repository>
+    ``
+
+3. Change into repo directory
+
+    ``
+    cd good-health-server
+    ``
 
 4. With poetry installed, you should install project dependecies by running:
 
@@ -79,6 +81,24 @@ You should have **Python 3.5+** and **git** installed.
     ``
 
     This will install pytest for running tests and flake8, linter for your project.
+
+5. To run the app
+
+  ``
+  poetry shell
+  ``
+
+  This create a shell to run your app in a close environment
+
+6. then run the app
+
+  ``
+  python manager.py migrate
+  ``
+
+  ``
+  python manager.py runserver
+  ``
 
 #### To Note
 `src/app.py` is the entry to the project and source code should go into the `src` folder.
@@ -100,6 +120,7 @@ All tests should be written in the `tests` folder. tests/test_src.py is a sample
 ## Authors
 
 List the team behind this project. Their names linked to their Github, LinkedIn, or Twitter accounts should siffice. Ok to signify the role they play in the project, including the TTL and mentor
+You can add your name to Authors list in pyproject.toml file
 
 ## Contributing
 If this project sounds interesting to you and you'd like to contribute, thank you!

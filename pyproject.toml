@@ -3,7 +3,8 @@ name = "src"
 version = "0.1.0"
 description = ""
 authors = [
-    "Authors Here"
+    "Authors Here",
+    "Anonde Anthony"
 ]
 
 [tool.poetry.dependencies]

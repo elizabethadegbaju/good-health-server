@@ -4,7 +4,7 @@ from django.utils.timezone import now
 
 
 class UserProfile(models.Model):
-    """UserProfile Model"""
+    """UserProfile Model."""
     user = models.OneToOneField(User, on_delete=models.CASCADE)
 
     # TODO(Idowu is to create user but UserPost is linked to it so here is a
@@ -20,7 +20,7 @@ def get_upload_path(instance, filename):
 
 class UserPost(models.Model):
     """
-    UserPost Model for each post created by a user
+    UserPost Model for each post created by a user.
 
     It can be an anonymous post without extra information. Only one media
     file is required when creating a post and the time is stamped at the
@@ -38,13 +38,15 @@ class UserPost(models.Model):
     extra = models.TextField(blank=True)
 
     class Meta:
-        """ UserPost Meta class """
+        """ UserPost Meta class. """
         ordering = ['-created_at']
 
     def __str__(self):
         """
+        Converts  UserPost object to a string.
+
         :returns: the users name and time of post
-        :return: string
+        :rtype: string
         """
         if self.user == None:
             user = "user_not_found"

@@ -9,8 +9,8 @@ from .serializers import UserProfileSerializer, UserPostSerializer, \
 
 class UserProfileViewSet(viewsets.ModelViewSet):
     """
-    A viewset that provides `retrieve`, `create`, and `list` actions for
-    a user profile object.
+    A viewset that provides `retrieve`, `create`, and `list` actions for a
+    user profile object.
     """
     queryset = UserProfile.objects.all()
     serializer_class = UserProfileSerializer
@@ -19,7 +19,7 @@ class UserProfileViewSet(viewsets.ModelViewSet):
 class UserViewSet(viewsets.ModelViewSet):
     """
     A viewset that provides `retrieve`, `create`, and `list` actions for a
-    user object..
+    user object.
     """
     queryset = User.objects.all()
     serializer_class = UserSerializer

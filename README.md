@@ -84,21 +84,25 @@ You should have **Python 3.5+** and **git** installed.
 
 5. To run the app
 
-  ``
-  poetry shell
-  ``
+    ``
+    poetry shell
+    ``
 
-  This create a shell to run your app in a close environment
+    This creates a shell to run your app in a close environment
 
 6. then run the app
 
-  ``
-  python manager.py migrate
-  ``
+    ``
+    python manage.py makemigrations
+    ``
 
-  ``
-  python manager.py runserver
-  ``
+    ``
+    python manage.py migrate
+    ``
+
+    ``
+    python manage.py runserver
+    ``
 
 #### To Note
 `src/app.py` is the entry to the project and source code should go into the `src` folder.
@@ -120,6 +124,7 @@ All tests should be written in the `tests` folder. tests/test_src.py is a sample
 ## Authors
 
 List the team behind this project. Their names linked to their Github, LinkedIn, or Twitter accounts should siffice. Ok to signify the role they play in the project, including the TTL and mentor
+
 You can add your name to Authors list in pyproject.toml file
 
 ## Contributing

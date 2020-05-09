@@ -4,7 +4,9 @@ from django.utils.timezone import now
 
 
 class UserProfile(models.Model):
-    """UserProfile Model."""
+    """
+    UserProfile Model.
+    """
     user = models.OneToOneField(User, on_delete=models.CASCADE)
 
     # TODO(Idowu is to create user but UserPost is linked to it so here is a
@@ -38,7 +40,9 @@ class UserPost(models.Model):
     extra = models.TextField(blank=True)
 
     class Meta:
-        """ UserPost Meta class. """
+        """
+        UserPost Meta class.
+        """
         ordering = ['-created_at']
 
     def __str__(self):

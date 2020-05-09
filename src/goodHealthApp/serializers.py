@@ -11,7 +11,7 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         """
-        Meta class for UserSerializer.
+        UserSerializer Meta class.
         """
         model = User
         fields = ['url', 'first_name', 'last_name', 'email', 'password',
@@ -25,7 +25,7 @@ class UserProfileSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         """
-        Meta class for UserProfileSerializer.
+        UserProfileSerializer Meta class.
         """
         model = UserProfile
         fields = ['url', 'user']
@@ -38,7 +38,7 @@ class UserPostSerializer(serializers.HyperlinkedModelSerializer):
 
     class Meta:
         """
-        Meta class for UserPostSerializer.
+        UserPostSerializer Meta class.
         """
         model = UserPost
         fields = ['url', 'user', 'anonymous', 'location', 'created_at',

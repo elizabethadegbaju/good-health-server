@@ -37,4 +37,3 @@ class EmergencyLineViewset(viewsets.ModelViewSet):
     """
     queryset = EmergencyLine.objects.all()
     serializer_class = EmergencyLineSerializer
-    

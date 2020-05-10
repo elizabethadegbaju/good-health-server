@@ -47,7 +47,6 @@ class UserPostSerializer(serializers.HyperlinkedModelSerializer):
         model = UserPost
         fields = ['url', 'user', 'anonymous', 'location', 'created_at',
                   'updated_at', 'media1', 'media2', 'media3', 'extra']
-<<<<<<< HEAD
 
 
 class EmergencyLineSerializer(serializers.HyperlinkedModelSerializer):
@@ -57,5 +56,3 @@ class EmergencyLineSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = EmergencyLine
         field = ['name', 'phone_number']
-=======
->>>>>>> develop

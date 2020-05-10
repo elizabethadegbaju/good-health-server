@@ -2,15 +2,9 @@
 from django.contrib.auth.models import User
 from rest_framework import viewsets
 
-<<<<<<< HEAD
 from .models import UserProfile, UserPost, EmergencyLine
 from .serializers import UserProfileSerializer, UserPostSerializer, \
     UserSerializer, EmergencyLineSerializer
-=======
-from .models import UserProfile, UserPost
-from .serializers import UserProfileSerializer, UserPostSerializer, \
-    UserSerializer
->>>>>>> develop
 
 
 class UserProfileViewSet(viewsets.ModelViewSet):

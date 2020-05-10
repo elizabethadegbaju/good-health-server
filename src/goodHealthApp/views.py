@@ -28,7 +28,6 @@ class UserPostViewSet(viewsets.ModelViewSet):
     """
     queryset = UserPost.objects.all()
     serializer_class = UserPostSerializer
-<<<<<<< HEAD
 
 
 # emergencyline viewset
@@ -39,5 +38,3 @@ class EmergencyLineViewset(viewsets.ModelViewSet):
     queryset = EmergencyLine.objects.all()
     serializer_class = EmergencyLineSerializer
     
-=======
->>>>>>> develop

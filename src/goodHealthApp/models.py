@@ -57,7 +57,6 @@ class UserPost(models.Model):
         else:
             user = str(self.user)
         return user + " - " + str(self.created_at)
-<<<<<<< HEAD
 
 
 
@@ -69,5 +68,3 @@ class EmergencyLine(models.Model):
     #property
     def __str__(self):
         return self.name
-=======
->>>>>>> develop

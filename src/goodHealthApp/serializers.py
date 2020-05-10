@@ -1,11 +1,7 @@
 from django.contrib.auth.models import User
 from rest_framework import serializers
 
-<<<<<<< HEAD
 from .models import UserProfile, UserPost, EmergencyLine
-=======
-from .models import UserProfile, UserPost
->>>>>>> develop
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):

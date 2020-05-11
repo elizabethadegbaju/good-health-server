@@ -49,9 +49,10 @@ class EmergencyLineSerializer(serializers.HyperlinkedModelSerializer):
     """
     Serializer for EmergencyLine Model.
     """
+
     class Meta:
         """
         EmergencyLineSerializer Meta class.
         """
         model = EmergencyLine
-        field = ['name', 'phone_number']
+        fields = ['url', 'name', 'phone_number']

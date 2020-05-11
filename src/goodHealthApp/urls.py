@@ -7,7 +7,7 @@ router = routers.DefaultRouter()
 router.register(r'userprofiles', UserProfileViewSet)
 router.register(r'postfeed', UserPostViewSet)
 router.register(r'users', UserViewSet)
-router.register(r'emergencyline', EmergencyLineViewSet)
+router.register(r'emergencylines', EmergencyLineViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),

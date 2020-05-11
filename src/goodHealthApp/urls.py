@@ -3,7 +3,7 @@ from rest_framework import routers
 
 from .views import UserPostViewSet, UserProfileViewSet, UserViewSet, EmergencyLineViewset
 
-router = routers.DefaultRouter()
+router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'userprofiles', UserProfileViewSet)
 router.register(r'postfeed', UserPostViewSet)
 router.register(r'users', UserViewSet)

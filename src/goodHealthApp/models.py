@@ -57,3 +57,14 @@ class UserPost(models.Model):
         else:
             user = str(self.user)
         return user + " - " + str(self.created_at)
+
+
+
+#ADEMOLA - EmergencyLine Model
+class EmergencyLine(models.Model):
+    name = models.CharField(max_length=100)
+    phone_number = models.IntegerField()
+
+    #property
+    def __str__(self):
+        return self.name

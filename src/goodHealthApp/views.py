@@ -2,9 +2,8 @@
 from django.contrib.auth.models import User
 from rest_framework import viewsets
 
-from .models import UserProfile, UserPost
-from .serializers import UserProfileSerializer, UserPostSerializer, \
-    UserSerializer
+from .models import UserProfile, UserPost, EmergencyLine
+from .serializers import UserProfileSerializer, UserPostSerializer, UserSerializer, EmergencyLineSerializer
 
 
 class UserProfileViewSet(viewsets.ModelViewSet):
@@ -29,3 +28,12 @@ class UserPostViewSet(viewsets.ModelViewSet):
     """
     queryset = UserPost.objects.all()
     serializer_class = UserPostSerializer
+
+
+# emergencyline viewset
+class EmergencyLineViewset(viewsets.ModelViewSet):
+    """
+    emergencyline viewset that provides 'retrieve', 'create', and 'list' actions.
+    """
+    queryset = EmergencyLine.objects.all()
+    serializer_class = EmergencyLineSerializer

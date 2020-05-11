@@ -1,7 +1,7 @@
 from django.contrib.auth.models import User
 from rest_framework import serializers
 
-from .models import UserProfile, UserPost
+from .models import UserProfile, UserPost, EmergencyLine
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
@@ -43,3 +43,15 @@ class UserPostSerializer(serializers.HyperlinkedModelSerializer):
         model = UserPost
         fields = ['url', 'user', 'anonymous', 'location', 'created_at',
                   'updated_at', 'media1', 'media2', 'media3', 'extra']
+
+
+class EmergencyLineSerializer(serializers.HyperlinkedModelSerializer):
+    """
+    Serializer for EmergencyLine Model.
+    """
+    class Meta:
+        """
+        EmergencyLineSerializer Meta class.
+        """
+        model = EmergencyLine
+        field = ['name', 'phone_number']

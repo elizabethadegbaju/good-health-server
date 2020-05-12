@@ -63,7 +63,7 @@ class UserPost(models.Model):
 #ADEMOLA - EmergencyLine Model
 class EmergencyLine(models.Model):
     name = models.CharField(max_length=100)
-    phone_number = models.IntegerField()
+    phone_number = models.CharField(max_length=15)
 
     #property
     def __str__(self):

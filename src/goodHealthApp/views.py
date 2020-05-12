@@ -31,7 +31,7 @@ class UserPostViewSet(viewsets.ModelViewSet):
 
 
 # emergencyline viewset
-class EmergencyLineViewset(viewsets.ModelViewSet):
+class EmergencyLineViewSet(viewsets.ModelViewSet):
     """
     emergencyline viewset that provides 'retrieve', 'create', and 'list' actions.
     """

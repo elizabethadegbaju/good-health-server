@@ -2,8 +2,9 @@
 from django.contrib.auth.models import User
 from rest_framework import viewsets
 
-from .models import UserProfile, UserPost, EmergencyLine
-from .serializers import UserProfileSerializer, UserPostSerializer, UserSerializer, EmergencyLineSerializer
+from src.goodHealthApp.models import UserProfile, UserPost, EmergencyLine
+from src.goodHealthApp.serializers import UserProfileSerializer, UserPostSerializer, \
+    UserSerializer, EmergencyLineSerializer
 
 
 class UserProfileViewSet(viewsets.ModelViewSet):

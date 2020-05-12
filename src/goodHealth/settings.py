@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # goodhealth application
-    'goodHealthApp.apps.GoodhealthappConfig',
+    'src.goodHealthApp.apps.GoodhealthappConfig',
 
     # third party applications
     'rest_framework',

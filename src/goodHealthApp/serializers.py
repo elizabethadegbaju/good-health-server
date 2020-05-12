@@ -1,7 +1,7 @@
 from django.contrib.auth.models import User
 from rest_framework import serializers
 
-from .models import UserProfile, UserPost, EmergencyLine
+from src.goodHealthApp.models import UserProfile, UserPost, EmergencyLine
 
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):

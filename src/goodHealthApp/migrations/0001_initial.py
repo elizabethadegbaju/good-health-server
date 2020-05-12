@@ -3,7 +3,7 @@
 from django.conf import settings
 from django.db import migrations, models
 import django.db.models.deletion
-import goodHealthApp.models
+import src.goodHealthApp.models
 
 
 class Migration(migrations.Migration):
@@ -27,13 +27,17 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('anonymous', models.BooleanField(default=True)),
-                ('media1', models.FileField(upload_to=goodHealthApp.models.get_upload_path)),
-                ('media2', models.FileField(blank=True, null=True, upload_to=goodHealthApp.models.get_upload_path)),
-                ('media3', models.FileField(blank=True, null=True, upload_to=goodHealthApp.models.get_upload_path)),
+                ('media1', models.FileField(
+                    upload_to=src.goodHealthApp.models.get_upload_path)),
+                ('media2', models.FileField(blank=True, null=True,
+                                            upload_to=src.goodHealthApp.models.get_upload_path)),
+                ('media3', models.FileField(blank=True, null=True,
+                                            upload_to=src.goodHealthApp.models.get_upload_path)),
                 ('location', models.CharField(max_length=30)),
                 ('time', models.DateTimeField(auto_now_add=True)),
                 ('extra', models.TextField(blank=True, null=True)),
-                ('user', models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.SET_NULL, to='goodHealthApp.UserProfile')),
+                ('user', models.ForeignKey(blank=True, null=True,
+                                           on_delete=django.db.models.deletion.SET_NULL, to='goodHealthApp.UserProfile')),
             ],
             options={
                 'ordering': ['time'],
